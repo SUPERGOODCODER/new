@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: blue;
+ text-align: center;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:yellow;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:red">Fighter<span <h1 style="color:blue;"> Jets</h1>
+  <p>Here are some of the most incredible FIGHTER JETS in history.</p>
+</div>
+
+<div class="topnav">
+  <a href="https://aerocorner.com/aircraft/grumman-f-14-tomcat/" style="color:black;">Tomcat F-14</a>
+  <a href="https://aerocorner.com/aircraft/lockheed-martin-f35-lightning-ii/" style="color:black;">F-35 Lightning</a>
+  <a href="https://aerocorner.com/aircraft/eurofighter-typhoon-t1/" style="color:black;">Eurofighter Typhoon</a>
+   <a href="https://aerocorner.com/aircraft/a-10-warthog/" style="color:black;">A-10 Warthog</a>
+     <a href="https://aerocorner.com/aircraft/sukhoi-su-27/" style="color:black;">Sukhoi SU-27</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2 style="color:lightgreen;">Meaning</h2>
+    <p>Fighter aircraft are fixed-wing military aircraft designed primarily for air-to-air combat. In military conflict, the role of fighter aircraft is to establish air superiority of the battlespace. Domination of the airspace above a battlefield permits bombers and attack aircraft to engage in tactical and strategic bombing of enemy targets.Since World War I, achieving and maintaining air superiority has been considered essential for victory in conventional warfare.[1]
+
+        Fighters continued to be developed throughout World War I, to deny enemy aircraft and dirigibles the ability to gather information by reconnaissance over the battlefield. Early fighters were very small and lightly armed by later standards, and most were biplanes built with a wooden frame covered with fabric, and a maximum airspeed of about 100 mph (160 km/h). As control of the airspace over armies became increasingly important, all of the major powers developed fighters to support their military operations. Between the wars, wood was largely replaced in part or whole by metal tubing, and finally aluminum stressed skin structures (monocoque) began to predominate.
+        
+        By World War II, most fighters were all-metal monoplanes armed with batteries of machine guns or cannons and some were capable of speeds approaching 400 mph (640 km/h). </p>
+  </div>
+  
+  <div class="column middle">
+    <h2 style="color:lightgreen">Bomb<span <h2 style="color:red;">ers</h2>
+    <p>Bombers are normally larger, heavier, and less maneuverable than fighter aircraft. They are capable of carrying large payloads of bombs, torpedoes or cruise missiles. Bombers are used almost exclusively for ground attacks and not fast or agile enough to take on enemy fighters head-to-head. Some have a single engine and require one pilot to operate, while others have two or more engines and require crews of two or more. A limited number of bombers, such as the B-2 Spirit, have stealth capabilities that keep them from being detected by enemy radar. An example of a conventional modern bomber would be the B-52 Stratofortress. An example of a World War II bomber would be a B-17 Flying Fortress. Bombers include light bombers, medium bombers, heavy bombers, dive bombers, and torpedo bombers.A strategic bomber is a medium- to long-range penetration bomber aircraft designed to drop large amounts of air-to-ground weaponry onto a distant target for the purposes of debilitating the enemy's capacity to wage war. Unlike tactical bombers, penetrators, fighter-bombers, and attack aircraft, which are used in air interdiction operations to attack enemy combatants and military equipment, strategic bombers are designed to fly into enemy territory to destroy strategic targets (e.g., infrastructure, logistics, military installations, factories, etc.). In addition to strategic bombing, strategic bombers can be used for tactical missions. There are currently only three countries that operate strategic bombers: the United States, Russia[1] and China.
+
+        The modern strategic bomber role appeared after strategic bombing was widely employed, and atomic bombs were first used in combat during World War II. Nuclear strike missions (i.e., delivering nuclear-armed missiles or bombs) can potentially be carried out by most modern fighter-bombers and strike fighters, even at intercontinental range, with the use of aerial refueling, so any nation possessing this combination of equipment and techniques theoretically has such capability. Primary delivery aircraft for a modern strategic bombing mission need not always necessarily be a heavy bomber type, and any modern aircraft capable of nuclear strikes at long range is equally able to carry out tactical missions with conventional weapons. An example is France's Mirage IV, a small strategic bomber replaced in service by the ASMP-equipped Mirage 2000N fighter-bomber and Rafale multirole fighter.</p>
+    
+  </div>
+  
+  <div class="column side">
+    <h2 style="color:lightgreen">Aircraft<span <h2 style="color:red;"> Carrier</h2>
+    <p>aircraft carrier, naval vessel from which airplanes may take off and on which they may land. As early as November 1910, an American civilian pilot, Eugene Ely, flew a plane off a specially built platform on the deck of the U.S. cruiser Birmingham at Hampton Roads, Virginia.
+    On January 18, 1911, in San Francisco Bay, Ely landed on a platform built on the quarterdeck of the battleship Pennsylvania, using wires attached to sandbags on the platform as arresting gear; he then took off from the same ship.The British navy also experimented with the carrier; during World War I it developed the first true carrier with an unobstructed flight deck, the HMS Argus, built on a converted merchant-ship hull. The war ended before the Argus could be put into action, but the U.S. and Japanese navies quickly followed the British example. The first U.S. carrier, a converted collier renamed the USS Langley, joined the fleet in March 1922. A Japanese carrier, the Hosyo, which entered service in December 1922, was the first carrier designed as such from the keel up</p>
+  </div>
+</div>
+  <br><br>
+  
+<h1 ><u>Fighter Planes</u></h1><br><br>
+<iframe width="660" height="415" src="https://www.youtube.com/embed/Ce6UU0Qo0Ts" ></iframe>
+<br>
+<h1 style="text-align: center;"><u>Bombers</u></h1>
+<iframe width="660" height="415" src="https://www.youtube.com/embed/4SwqTLDEXT8" ></iframe>
+<br><h1 style="text-align: center;"><u>Aircraft carrier</u></h1>
+<iframe width="660" height="415" src="https://www.youtube.com/embed/5u3wtAz32ds" ></iframe>
+<div class="footer">
+  <p>THE END</p>
+  </div>
+</body>
+</html>
+
+
